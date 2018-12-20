@@ -86,6 +86,7 @@ Mat fusion(Mat M1, Mat M2, int zt, int ap, int mp) {
 		bool b1 = M1.rows%2 == 1;
 		bool b2 = M1.cols%2 == 1;
 		adb(M1, b1, b2);
+        adb(M2, b1, b2);
 
         Mat G11, G21;
         Mat M1T, M2T;
